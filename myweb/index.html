@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website of Shadrick Solochi, an ICT student at Mulungushi University.">
+  <title>Shadrick Solochi | My Student Website</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <h1>Welcome to the World of Web Programming</h1>
+    <p class="tagline">Shadrick Solochi &ndash; 202509615 &ndash; Mulungushi University</p>
+  </header>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#hobbies">My Hobbies</a></li>
+      <li><a href="#plan">My Learning Plan</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#media">My Media</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener noreferrer">Learn Web Development (MDN)</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello World! This is my first HTML document, now grown into a full personal website.</p>
+      <p>My name is Shadrick Solochi and I am an ICT student at Mulungushi University in Zambia. I am currently learning Introduction to Web Technologies, and I enjoy turning ideas into pages and apps that people can actually use. Outside class I build websites and small applications for local businesses, which teaches me how to listen to real users and solve practical problems. I want to become a confident developer who creates useful digital tools for Zambian communities.</p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <h2>My Hobbies</h2>
+      <p>My top 3 hobbies:</p>
+      <ul>
+        <li>Playing Football</li>
+        <li>Reading</li>
+        <li>Listening to Music</li>
+      </ul>
+    </section>
+
+    <section id="plan" class="content-section">
+      <h2>My Learning Plan</h2>
+      <h3>Steps to improve my web skills</h3>
+      <ol>
+        <li>Practise HTML and CSS every day by rebuilding small pages from scratch.</li>
+        <li>Learn JavaScript basics and add simple interactivity to my projects.</li>
+        <li>Publish each project on GitHub and get feedback from classmates.</li>
+        <li>Build one complete responsive website for a real client each semester.</li>
+      </ol>
+
+      <div class="table-wrap">
+        <table>
+          <caption>My weekly web learning plan</caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Topic</th>
+              <th scope="col">Practice task</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday</td><td>HTML structure</td><td>Build a page using header, nav, main and footer</td></tr>
+            <tr><td>Wednesday</td><td>CSS layout</td><td>Style a photo gallery with Flexbox or Grid</td></tr>
+            <tr><td>Friday</td><td>Forms</td><td>Create a contact form with required fields</td></tr>
+            <tr><td>Saturday</td><td>JavaScript basics</td><td>Write a small script that reacts to a button click</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="photos" class="content-section">
+      <h2>My Photos</h2>
+      <h3>Photo gallery</h3>
+      <div class="gallery">
+        <figure>
+          <img class="pos-reading" src="images/photo1.jpg" alt="Shadrick wearing headphones and a red football shirt, reading the book Quantum Computing for Everyone with other books and a laptop on the desk">
+          <figcaption>Photo 1: Reading is one of my favourite hobbies. Here I am studying with headphones on and a pile of books on my desk.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo2.jpg" alt="Young men playing football on a dusty pitch, with a player in a sky-blue kit dribbling the ball while others chase and neighbours watch">
+          <figcaption>Photo 2: Football on a dusty community pitch. A player in a sky-blue kit dribbles past defenders while neighbours watch.</figcaption>
+        </figure>
+        <figure>
+          <img class="pos-coding" src="images/photo3.jpg" alt="Shadrick wearing headphones and typing HTML code on a laptop at a wooden desk">
+          <figcaption>Photo 3: Coding my first HTML page for Web Technologies on my laptop at my study desk.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+
+      <h3>Video introduction</h3>
+      <video controls preload="metadata">
+        <source src="videos/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>A short video where I introduce myself, my programme and the web skill I hope to learn.</p>
+      <details>
+        <summary>Read the written summary of the video</summary>
+        <p>In the video I say that my name is Shadrick Solochi, I am studying ICT at Mulungushi University, and the web skill I most want to learn is building responsive websites with HTML, CSS and JavaScript.</p>
+      </details>
+
+      <h3>Audio clip</h3>
+      <audio controls preload="metadata">
+        <source src="videos/voice.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>In this recording I explain why I love football and why I chose to study web technologies.</p>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p class="note">This form is a browser demonstration only. It does not send or store any data.</p>
+      <form action="#" method="get">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="general">General question</option>
+            <option value="project">Website project</option>
+            <option value="feedback">Feedback</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Shadrick Solochi &ndash; ICT251 Web Technologies, Mulungushi University</p>
+    <p><a href="#top">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
