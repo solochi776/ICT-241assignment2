@@ -5,7 +5,7 @@ Student number: 202509615
 
 A responsive student portfolio built with plain HTML5, CSS and JavaScript. It grew from a one-page "Hello World" (Activity 1) into a full personal website (Activity 2) and now has interactive features (Activity 3). The colour palette is blue, black, white and red, with a light and a dark theme.
 
-**Live website:** `https://ss-desyn-tech.onrender.com`
+**Live website:** `https://solo-tech.com`
 
 ## Sections
 
