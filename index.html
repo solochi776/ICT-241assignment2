@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive portfolio of Shadrick Solochi, an ICT student at Mulungushi University.">
+  <title>Shadrick Solochi | My Student Website</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'/%3E%3Crect y='52' width='64' height='12' fill='%23c8102e'/%3E%3Ctext x='32' y='42' font-size='34' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%23fff'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body id="top">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="intro">
+    <div class="hero-inner">
+      <h1>Shadrick Solochi</h1>
+      <p class="subtitle">Welcome to the World of Web Programming</p>
+      <p class="programme">ICT student at Mulungushi University &ndash; 202509615</p>
+      <p class="intro-text">I build websites and small apps for local businesses. This portfolio shows what I am learning in ICT251 Web Technologies: structure with HTML5, design with CSS and interaction with JavaScript.</p>
+      <p class="hero-actions">
+        <a class="btn btn-red" href="#projects">View My Projects</a>
+        <a class="btn btn-light" href="#contact">Contact Me</a>
+      </p>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#hobbies">My Hobbies</a></li>
+      <li><a href="#plan">My Learning Plan</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#media">My Media</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener noreferrer">Learn Web Development (MDN)</a></li>
+      <li id="theme-item" hidden><button type="button" id="theme-toggle" class="theme-toggle">Switch to dark theme</button></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hey Everybody, Hope you really love what you see with the work that i tried putting into this project and hope you enjoy it, in spanish we say; Ciao mi amigos.</p>
+      <p>My name is Shadrick Solochi and I am an ICT student at Mulungushi University in Zambia. I am currently learning Introduction to Web Technologies, and I enjoy turning ideas into pages and apps that people can actually use. Outside class I build websites and small applications for local businesses, which teaches me how to listen to real users and solve practical problems. I want to become a confident developer who creates useful digital tools for Zambian communities.</p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <h2>My Hobbies</h2>
+      <p>My top 3 hobbies:</p>
+      <ul>
+        <li>Playing Football</li>
+        <li>Reading</li>
+        <li>Listening to Music</li>
+      </ul>
+    </section>
+
+    <section id="plan" class="content-section">
+      <h2>My Learning Plan</h2>
+      <h3>Steps to improve my web skills</h3>
+      <ol>
+        <li>Practise HTML and CSS every day by rebuilding small pages from scratch.</li>
+        <li>Learn JavaScript basics and add simple interactivity to my projects.</li>
+        <li>Publish each project on GitHub and get feedback from classmates.</li>
+        <li>Build one complete responsive website for a real client each semester.</li>
+      </ol>
+
+      <div class="table-wrap">
+        <table>
+          <caption>My weekly web learning plan</caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Topic</th>
+              <th scope="col">Practice task</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday</td><td>HTML structure</td><td>Build a page using header, nav, main and footer</td></tr>
+            <tr><td>Wednesday</td><td>CSS layout</td><td>Style a photo gallery with Flexbox or Grid</td></tr>
+            <tr><td>Friday</td><td>Forms</td><td>Create a contact form with required fields</td></tr>
+            <tr><td>Saturday</td><td>JavaScript basics</td><td>Write a small script that reacts to a button click</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section">
+      <h2>My Projects and Skills</h2>
+      <p>These are examples of what I have learned so far. Search by keyword or pick a category to filter them.</p>
+
+      <div class="filter-bar">
+        <div class="field">
+          <label for="project-search">Search projects</label>
+          <input type="search" id="project-search" name="project-search" autocomplete="off" placeholder="Try: form, grid, GitHub">
+        </div>
+        <div class="field">
+          <label for="project-category">Category</label>
+          <select id="project-category" name="project-category">
+            <option value="all">All categories</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="tools">Tools</option>
+          </select>
+        </div>
+        <button type="button" id="project-reset" class="btn btn-outline">Reset filters</button>
+      </div>
+
+      <p id="project-count" class="count" role="status"></p>
+
+      <div class="project-grid" id="project-grid">
+        <article class="project-card" data-category="html">
+          <h3>Semantic page structure</h3>
+          <p>I turned a plain Hello World page into a full website using header, nav, main, section and footer, so the layout makes sense to screen readers and search engines.</p>
+          <p class="tag">HTML</p>
+        </article>
+        <article class="project-card" data-category="html">
+          <h3>Accessible media and forms</h3>
+          <p>I added descriptive alt text, photo captions, labelled form fields, media controls and written summaries so that every visitor can use the page.</p>
+          <p class="tag">HTML</p>
+        </article>
+        <article class="project-card" data-category="css">
+          <h3>Responsive layout and themes</h3>
+          <p>I used Grid, Flexbox, a media query and CSS variables so the site reads well on a phone or a computer, in a light or a dark theme.</p>
+          <p class="tag">CSS</p>
+        </article>
+        <article class="project-card" data-category="javascript">
+          <h3>Form validation and preview</h3>
+          <p>I wrote a script that rejects blank or spaces-only input and badly formed emails, then shows a local preview without reloading the page.</p>
+          <p class="tag">JavaScript</p>
+        </article>
+        <article class="project-card" data-category="javascript">
+          <h3>Gallery viewer and project filter</h3>
+          <p>I used arrays, events and DOM updates to build Previous and Next photo buttons and a live search filter for this section.</p>
+          <p class="tag">JavaScript</p>
+        </article>
+        <article class="project-card" data-category="tools">
+          <h3>Publishing with GitHub and Render</h3>
+          <p>I keep every version of this site on GitHub and deploy it as a static site on Render, so anyone can open it with a single link.</p>
+          <p class="tag">Tools</p>
+        </article>
+      </div>
+
+      <p id="project-empty" class="empty" hidden></p>
+    </section>
+
+    <section id="photos" class="content-section">
+      <h2>My Photos</h2>
+      <h3>Photo gallery</h3>
+      <div class="viewer" id="gallery-viewer">
+        <div class="viewer-stage">
+          <figure class="slide">
+            <img src="images/photo1.jpg" alt="Shadrick wearing headphones and a red football shirt, reading the book Quantum Computing for Everyone with other books and a laptop on the desk">
+            <figcaption>Photo 1: Reading is one of my favourite hobbies. Here I am studying with headphones on and a pile of books on my desk.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="images/photo2.jpg" alt="Young men playing football on a dusty pitch, with a player in a sky-blue kit dribbling the ball while others chase and neighbours watch">
+            <figcaption>Photo 2: Football on a dusty community pitch. A player in a sky-blue kit dribbles past defenders while neighbours watch.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="images/photo3.jpg" alt="Shadrick wearing headphones and typing HTML code on a laptop at a wooden desk">
+            <figcaption>Photo 3: Coding my first HTML page for Web Technologies on my laptop at my study desk.</figcaption>
+          </figure>
+        </div>
+        <div class="viewer-controls" id="viewer-controls" hidden>
+          <button type="button" id="prev-photo" class="btn btn-outline">Previous</button>
+          <p id="photo-status" class="count" role="status"></p>
+          <button type="button" id="next-photo" class="btn">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+
+      <h3>Video introduction</h3>
+      <video controls preload="metadata">
+        <source src="videos/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>A short video where I introduce myself, my programme and the web skill I hope to learn.</p>
+      <details>
+        <summary>Read the written summary of the video</summary>
+        <p>In the video I say that my name is Shadrick Solochi, I am studying ICT at Mulungushi University, and the web skill I most want to learn is building responsive websites with HTML, CSS and JavaScript.</p>
+      </details>
+
+      <h3>Audio clip</h3>
+      <audio controls preload="metadata">
+        <source src="videos/voice.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>In this recording I explain why I love football and why I chose to study web technologies.</p>
+      <details>
+        <summary>Read the written summary of the audio clip</summary>
+        <p>In the recording I talk about why I love football and why I chose to study web technologies.</p>
+      </details>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p class="note">Browser demonstration only &mdash; no message is sent.</p>
+      <form id="contact-form" action="#" method="get" novalidate aria-label="Contact form (browser demonstration only, no message is sent)">
+        <p id="form-status" class="form-status" role="status"></p>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name" aria-describedby="name-error">
+          <p class="error" id="name-error"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email" aria-describedby="email-error">
+          <p class="error" id="email-error"></p>
+        </div>
+        <div class="field">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="general">General question</option>
+            <option value="project">Website project</option>
+            <option value="feedback">Feedback</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+          <p class="error" id="message-error"></p>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Preview message</button>
+          <button type="reset" class="btn btn-outline">Clear form</button>
+        </div>
+      </form>
+      <div id="form-preview" class="preview" aria-live="polite" hidden></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Shadrick Solochi &ndash; ICT251 Web Technologies, Mulungushi University</p>
+    <p>
+      <a href="#top">Back to top</a> &nbsp;|&nbsp;
+      <a href="https://github.com/solochi776/ICT-241assignment2" target="_blank" rel="noopener noreferrer">View Source on GitHub</a>
+    </p>
+  </footer>
+
+</body>
+</html>
